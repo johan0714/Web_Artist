@@ -1,0 +1,595 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+
+    --red:#ff2e63;
+    --black:#252a34;
+    --blue:#08d9d6;
+    --white:#eaeaea;
+}
+
+body{
+    
+    background:#fff;
+    overflow-x:hidden ;
+    font-family: 'Raleway', sans-serif;
+    
+    
+    
+    }
+
+    /* Menu de navegación */
+header .header {
+    
+    position: relative;
+    width: 100%;
+   
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+
+.menu .logo-box{
+    margin-left: 20px;
+    
+    
+}
+
+.menu .logo-box h1 a {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--black)
+}
+
+.menu .list-container .list{
+    display: flex;
+    
+    
+}
+
+.menu .list-container .list li{
+ 
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu .list-container .list li a{
+ 
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    
+    transition: 0.33s;
+    border-radius: 14px;
+    font-size: 16px;
+    
+
+}
+
+.menu .list-container .list li a.activo{
+
+    background: var(--red);
+    color: #fff
+}
+
+.menu .list-container .list li a:hover{
+
+    background: var(--red);
+    color: #fff
+}
+
+
+
+.btn-menu{
+    display: none;
+}
+
+    /* Menu de navegación */
+
+
+
+    /* IMG_HEADER */
+   .img-header{
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       background: url(./CSS/img/header.jpg);
+       background-attachment:fixed;
+       background-size: cover;
+   }
+
+
+   .img-header .welcome{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.5);
+   }
+
+   .img-header .welcome h1{
+      font-size: 50px;
+      color:#fff;
+      font-weight:200;
+
+   }
+
+   .img-header .welcome hr{
+    
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+
+ }
+ main{display: flex;
+flex-direction: column;}
+
+section{display: flex;}
+
+
+ .img-header .welcome p{
+    
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+
+ }
+
+ .img-header .welcome button{
+    
+   width: 170px;
+   height: 40px;
+   background: var(--red);
+   border-radius: 24px;
+   border: none;
+   font-size: 22px;
+   color: #fff;
+   text-align: center;
+   margin-top: 20px;
+   cursor: pointer;
+   transition: 0,5s;
+
+ }
+
+ .img-header .welcome button:hover{
+     background-color:var(--blue);
+  }
+
+    /* IMG_HEADER */
+
+
+    /* Acerca de nosotros */
+  .acerca-de{
+      width: 100%;
+      margin-top: 120px;
+  }
+
+  .acerca-de .info-container{
+ width: 80%;
+ 
+ display: flex;
+ margin: auto;
+ flex-direction: column;
+ justify-content: center;
+  }
+
+  .acerca-de .info-container h2{
+      font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.acerca-de .info-container p{
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 35px;
+    margin: 10px 0px;
+}
+
+.acerca-de .info-container .about-gallery{
+    
+    display: flex;
+   
+    justify-content: center;
+    margin: 50px 0px;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+.uno {
+flex: 1 1 30%;
+width: 30px;
+margin: 1px;
+}
+
+.dos {
+    flex: 1 1 30%;
+    width: 30px;
+    margin: 1px;
+    }
+
+    .tres {
+        flex: 1 1 30%;
+        width: 30px;
+        margin: 1px;
+        }
+ .acerca-de .info-container .about-more{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+ }   
+.acerca-de .info-container .about-more button{
+    width: 120px;
+   height: 40px;
+   background: var(--red);
+   border-radius: 24px;
+   border: none;
+   outline: none;
+   font-size: 22px;
+   color: #fff;
+   text-align: center;
+   margin-top: 20px;
+   cursor: pointer;
+   transition: 0,5s;
+}
+    
+.acerca-de .info-container .about-more button:hover{
+    background-color: var(--blue);
+}
+    /* Acerca de nosotros */
+
+
+    /* Nuestros Proyectos  */
+
+
+    .our-projects{
+       position: relative;
+       width: 100%;
+       height: 100%;
+       background: url(./CSS/img/img-2.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin-top: 100px;
+
+    }
+
+
+    .our-projects .deg-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+    }
+    .our-projects .ejeZproject{
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .our-projects .container-project{
+        width: 90%;
+         margin: auto;
+         padding-top: 100px;
+
+    }
+
+    .our-projects .container-project .project-title{
+       border:2px solid white;
+       padding: 10px;
+       text-align: center;
+       margin: auto;
+
+    }
+
+    .our-projects .container-project .project-title h2{
+        font-size: 40px;
+        color: #fff;
+        font-weight: normal;
+        width: 50%;
+        margin: 10px auto;
+
+    }
+   
+    .our-projects .container-project .project-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        padding-bottom: 100px;
+
+    }
+
+    .project-img img{
+
+       width: 30px;
+       flex: 1 1 30%;
+       margin: 10px;
+       border-radius: 10px;
+
+    }
+
+    .testimonio{
+
+        width: 100%;
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+    }
+.testimonio .testimonio-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.testimonio .testimonio-title h2{
+    font-size: 50px;
+    color: var(--black);
+    font-weight: normal;
+    margin-bottom: 10px;
+
+}
+
+.testimonio .testimonio-title hr{
+    width: 60%;
+    margin: auto;
+    height: 2px;
+    background: var(--black);
+    border: none;
+    margin-bottom: 10px;
+
+}
+.testimonio .box-testimonio{
+
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.testimonio .card-testimonio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 45%;
+    margin: 10px;
+
+}
+
+.testimonio .card-testimonio img{
+    
+    
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    
+}
+
+.testimonio .box-testimonio .card-testimonio .testimonio-text{
+    width: 100%;
+    border: 2px solid var(--red);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.testimonio .box-testimonio .card-testimonio .testimonio-text h4{
+    color: var(--red);
+    font-weight:100;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonio .box-testimonio .card-testimonio .testimonio-text p{
+    font: 19px;
+    color: var(--black);
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+
+.testimonio .box-testimonio .card-testimonio .testimonio-text:hover{
+    border: 2px solid var(--blue);
+}
+
+.testimonio .box-testimonio .card-testimonio .testimonio-text:hover h4{
+    color: var(--blue);
+}
+
+/* Nuestros Proyectos  */
+
+
+/* footer */
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/footer.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer .deg-footer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.footer .footer-content .footer-title{
+    width: 50%;
+    margin: auto;
+    border:2px solid #fff;
+    padding:15px;
+}
+.footer .footer-content .footer-title h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.footer .footer-content .footer-title hr{
+    background: #fff;
+    height: 2px;
+    width: 80%;
+    margin:auto;
+}
+.footer .formulario-content{
+    width: 60%;
+    margin: 50px auto;
+    background: #fff;
+    padding:30px;
+    border-radius: 50px;
+    border: 1.5px solid var(--red);
+}
+.footer .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .formulario-content #formulario label{
+    font-size: 20px;
+    text-align: center;
+    color: var(--black);
+    margin: 30px 0px 10px 0px;
+}
+.footer .formulario-content #formulario input{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid var(--red);
+    text-align: center;
+    font-size: 18px;
+    color: var(--black);
+}
+.footer .formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin:auto;
+    padding: 20px;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid var(--red);
+    font-size: 15px;
+    color: var(--black);
+}
+.footer .formulario-content #formulario .send{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer .formulario-content #formulario button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: var(--red);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .formulario-content #formulario button:hover{
+    background: var(--blue);
+}
+.footer .formulario-content #formulario .mensaje-form{
+    width: 100%;
+    margin:auto;
+    padding:20px;
+}
+.footer .formulario-content #formulario .mensaje-form p{
+    font-size:19px;
+    color: var(--black);
+    line-height: 35px;
+}
+.footer .footer-text{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
+.footer .footer-text p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* footer */
